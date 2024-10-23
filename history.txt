@@ -1,0 +1,670 @@
+    1  > ~/.bash_history
+    2  history -w
+    3  > ~/.bash_history
+    4  history -w
+    5  history
+    6  clear
+    7  ssh-keygen
+    8  cat $HOME/.ssh/*.pub
+    9  ls -la $HOME/.ssh/
+   10  cd
+   11  pwd
+   12  mkdir repogit
+   13  ls
+   14  rm -r repogit/
+   15  s
+   16  clear
+   17  ls
+   18  mkdir repogit
+   19  ls
+   20  cd repogit
+   21  git clone git@github.com:OskrPortillo/TP_AySO1.git
+   22  ls
+   23  cd TP_AySO1/
+   24  pwd # pwd muestra el path donde estamos parados
+   25  pwd
+   26  history
+   27  ssh keygen #De esta forma se generará un juego de claves de ssh públicas y privadas en el directorio home del usuario “$HOME” en la carpeta oculta .ssh 
+   28  history
+   29  ls -la $HOME/.ssh/ # Listar los archivos ssh
+   30  cat $HOME/.ssh/*.pub # Ver el contenido del archivo donde se encuentra la clave publica
+   31  clear
+   32  ls -l # Muestra los archivos, directorios em forma detallada
+   33  ls -l
+   34  cat/etc/os-release # Ver el contenido del archivo de configuración “os-release“
+   35  cat /etc/os-release # Ver el contenido del archivo de configuración “os-release“
+   36  man grep
+   37  man grep # Verificar en la ayuda del comando grep como ignorar las mayusculas y minusculas (-i)
+   38  grep HOME_URL /etc/os-release # Realizar la búsqueda poniendo el string a buscar todo en mayúscula
+   39  grep home_url /etc/os-release # Realizar la búsqueda poniendo el string a buscar todo en minúscula
+   40  grep -i home_url /etc/os-release # Realizar la búsqueda ignorando mayusculas y minusculas
+   41  whoami # Muestra el nombre de usuario con el que estamos logueados o actual
+   42  echo “Usuario=$(whoami)” > datos_usuario.txt # Creamos un archivo datos_usuario.txt con el siguiente formato “usuario:<nombre-del-usuario>
+   43  ls
+   44  nano datos_usuario.txt 
+   45  git add . # agregamos todos los archivos al staging
+   46  git status
+   47  git config --global user.email "oscarportillo84@gmail.com"
+   48  git config --global user.name "Oskr_Portillo"
+   49  git commit -m "ADD: agregado 1er ejercicio sobre datos_usuarios.txt"
+   50  git status
+   51  grep cpuinfo
+   52  grep cpuinfo /proc
+   53  grep "model name" /proc/cpuinfo
+   54  grep "model name" /proc/cpuinfo | head -n1 
+   55  grep "model name" /proc/cpuinfo # Busca informacion del cpu en el directorio proc
+   56  grep "model name" /proc
+   57  grep "model name" /proc/cpuinfo # Busca informacion del cpu en el archivo cpuinfo que esta en el directorio proc 
+   58  grep "model name" /proc/cpuinfo | head -n1 # Muestra la primera linea de la busqueda 
+   59  clear
+   60  grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt 
+   61  ls
+   62  nano datos_usuario.txt 
+   63  git add .
+   64  git status
+   65  git commit -m "feat: Añadiendo informacion de CPU"
+   66  git status
+   67  clear
+   68  man grep
+   69  man grep -v
+   70  grep nologin /etc/passwd
+   71  grep -v nologin /etc/passwd # Busca y muestra todas las lineas que NO tengan nologin
+   72  grep -v 'nologin' /etc/passwd | head -n10 | sort -t ':' -k 7
+   73  grep -v 'nologin' /etc/passwd | head -n10 | sort -t ':' -k 7 > lista_ordenada
+   74  ls 
+   75  nano lista_ordenada 
+   76  git add .
+   77  git status
+   78  git commit -m "ADD: Listado de usuarios ordenada"
+   79  git push origin main
+   80  apropos dump 
+   81  apropos "dump traffic"
+   82  echo "tcpdump" > comando_dump_net; echo "apropos 'dump traffic' > comando_dump_net"
+   83  ls
+   84  nano comando_dump_net 
+   85  echo "tcpdump" > comando_dump_net ; echo "apropos 'dump traffic' >> comando_dump_net"
+   86  echo "tcpdump" > comando_dump_net ; echo "apropos 'dump traffic'" >> comando_dump_net
+   87  nano c
+   88  echo "tcpdump" > comando_dump_net ; echo "apropos dump traffic" >> comando_dump_net
+   89  nano comando_dump_net 
+   90  clear
+   91  git add .
+   92  git commit -m "ADD: Comando para capturar y analizar el trafico de red"
+   93  git push origin main
+   94  cat << EOF >> README.md
+   95  Alumno: Luis Portillo
+   96  Division: 315
+   97  Turno: Noche
+   98  EOF
+   99  history -a
+  100  cp $HOME/.bash_history ./Historial_comandos_Luis.txt 
+  101  ls
+  102  git add Historial_comandos_Luis.txt 
+  103  git commit -m "ADD: Historial de comandos del alumno"
+  104  git push origin main
+  105  ls
+  106  nano README.md 
+  107  git status
+  108  git add . README.md 
+  109  git commit -m "docs: actualizar el README con nueva información"
+  110  git push origin main
+  111  clear
+  112  exit
+  113  history -w terminal.txt
+  114  ls
+  115  clear
+  116  lscpu
+  117  clear
+  118  id
+  119  git clone https://github.com/upszot/UTN-FRA_SO_Vagrant
+  120  ls
+  121  cd UTN-FRA_SO_Vagrant/
+  122  ls
+  123  cd VagrantFiles/
+  124  ls
+  125  cd 1_equipo
+  126  ls
+  127  vagrant up
+  128  sudo apt istall vagrant
+  129  sudo apt install vagrant
+  130  ls
+  131  vagrant up
+  132  sudo apt install vagrant
+  133  clear
+  134  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+  135  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+  136  sudo snap install curl  # version 8.1.2
+  137  sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+  138  sudo apt update
+  139  sudo apt install vagrant
+  140  cd
+  141  curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+  142  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+  143  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+  144  sudo apt update
+  145  sudo apt install vagrant
+  146  sudo apt upgrade 
+  147  clear
+  148  wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+  149  echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+  150  sudo apt update
+  151  clear
+  152  sudo apt install vagrant
+  153  mkdir repogit2
+  154  ls
+  155  cd repogit
+  156  cd
+  157  cd repogit2
+  158  ls
+  159  git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+  160  git clone https://github.com/gsolerherrera/UTNFRA_SO_1P2C_2024_profesoler.git
+  161  #!/bin/bash
+  162  sudo mkdir -p /Examenes-UTN/{alumno_{1..3}/parcial{1..3},profesores}
+  163  echo "Muestro la estructur creada: "
+  164  tree /Examenes-UTN
+  165  clear
+  166  ls
+  167  ./UTN-FRA_SO_Examenes/202405/script_Precondicion.sh
+  168  ~/.bashrc  && history -a
+  169  source ~/.bashrc
+  170  history
+  171  ls
+  172  mkdir ~/RTA_Examen_$(date +%Y%m%d)
+  173  cd
+  174  ls
+  175  cd RTA_Examen_20241009/
+  176  ls
+  177  nano Punto_A.sh 
+  178  chmod +x Punto_A.sh
+  179  chmod +x ~/RTA_Examen_$(date +%Y%m%d)/Punto_A.sh
+  180  ./Punto_A.sh
+  181  nano Punto_A.sh 
+  182  ./Punto_A.sh
+  183  nano Punto_A.sh 
+  184  ./Punto_A.sh
+  185  mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}
+  186  tree datos
+  187  tree ./datos
+  188  ls
+  189  tree
+  190  nano Punto_A.sh 
+  191  ls
+  192  rm -rf videos
+  193  sudo rm -rf videos
+  194  ls
+  195  mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}
+  196  ls
+  197  mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}
+  198  ls
+  199  sudo mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}
+  200  ls
+  201  cd
+  202  ls
+  203  cd D
+  204  cd Videos
+  205  ls
+  206  cd Vídeos/
+  207  ls
+  208  mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}
+  209  ls
+  210  tree
+  211  sudo mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}
+  212  ls
+  213  tree /Vídeos
+  214  mkdir Dat
+  215  ls
+  216  sudo mkdir -p /datos/{textos/{libros,revistas},videos/{peliculas,series}}
+  217  ls
+  218  sudo mkdir -p /Examenes-UTN/{profesores,alumno_{1..3}/parcial_{1..3}}
+  219  ls
+  220  mkdir -p pruebas/{mama,papa}/hijo{1..3}
+  221  ls
+  222  sudo mkdir -p datos/{textos/{libros,revistas},videos/{peliculas,series}}
+  223  ls
+  224  tree /datos/
+  225  sudo mkdir -p /dato/textos/{libros,revistas} /datos/videos/{peliculas,series}
+  226  ls
+  227  sudo mkdir -p dato/textos/{libros,revistas} /datos/videos/{peliculas,series}
+  228  ls
+  229  tree /dato
+  230  cd
+  231  clear
+  232  lsblk
+  233  sudo mkdir /mnt/disco
+  234  lsblk
+  235  sudo mkfs.ext4 /dev/sdc
+  236  lsblk
+  237  sudo mount /dev/sdc /mnt/disco
+  238  lsblk
+  239  lsof /mnt/disco/
+  240  lsblk
+  241  lsof +f -- /mnt/disco
+  242  lsblk
+  243  umount /mnt/disco
+  244  sudo umount /mnt/disco
+  245  lsblk
+  246  sudo fdisk /dev/sdc
+  247  lsblok
+  248  lsblk
+  249  sudo mkfs.etx4 /dev/sdc1
+  250  sudo mkfs.ext4 /dev/sdc1
+  251  lsblk
+  252  sudo mkfs.ext4 /dev/sdc2
+  253  sudo mkfs.ext4 /dev/sdc5
+  254  sudo mkdir -p /mnt/part1
+  255  sudo mkdir -p /mnt/part2
+  256  sudo mkdir -p /mnt/part3
+  257  sudo mount /dev/sdc1 /mnt/part1
+  258  sudo mount /dev/sdc2 /mnt/part2
+  259  sudo mount /dev/sdc5 /mnt/part3
+  260  df -h
+  261  ls
+  262  lsblk
+  263  sudo fdisk /dev/sdb
+  264  git clone https://github.com/upszot/UTNFRA_SO_Vagrant.git.
+  265  ls 
+  266  cd UTN-FRA_SO_Vagrant/
+  267  ls
+  268  cd VagrantFiles/
+  269  ls
+  270  lsblk
+  271  sudo fdisk /dev/sdc
+  272  lsblk
+  273  sudo mkfs.ext4 /dev/sdc1 
+  274  sudo mkfs.ext4 /dev/sdc2
+  275  sudo mkfs.ext4 /dev/sdc3
+  276  sudo mkfs.ext4 /dev/sdc5
+  277  sudo mkfs.ext4 /dev/sdc6
+  278  cd
+  279  pwd
+  280  mkdir -p /discos/discos_{1..5}
+  281  sudo mkdir -p /discos/disco_{1..5}
+  282  ls
+  283  sudo mkdir -p discos/disco_{1..5}
+  284  ls
+  285  cd discos/
+  286  ls
+  287  cd
+  288  sudo mount /dev/sdc1 /home/oscar/discos/disco_1
+  289  ls
+  290  cd discos/
+  291  ls
+  292  cd disco_1
+  293  ls
+  294  ls -lah
+  295  cd
+  296  lsblk
+  297  sudo mount /dev/sdc3 /home/oscar/discos/disco_3
+  298  sudo mount /dev/sdc4 /home/oscar/discos/disco_4
+  299  lsblk
+  300  clear
+  301  sudo mkdir-p examen/{salidas/salida{1..3}, entradas/entrada{1..3}}
+  302  sudo mkdir -p examen/{salidas/salida{1..3}, entradas/entrada{1..3}}
+  303  ls
+  304  cd examen
+  305  ls
+  306  cd
+  307  tree
+  308  clear
+  309  ls
+  310  tree examen
+  311  ls
+  312  rm -r entradas/
+  313  sudo rm -r entradas/
+  314  sudo rm -r examen/
+  315  ls
+  316  sudo mkdir -p examen/{salidas/salida{1..3},entradas/entrada{1..3}}
+  317  ls
+  318  cd examen/
+  319  ls
+  320  tree
+  321  cd
+  322  tree examen
+  323  clear
+  324  ps aux
+  325  grep sshd
+  326  ps aux | grep sshd
+  327  clear
+  328  ls
+  329  cd examen
+  330  ls
+  331  cd salidas
+  332  cd salida
+  333  cd salida3
+  334  clear
+  335  ps aux | grep sshd > ~/examen/salidas/salida3/procesos.txt
+  336  sudo ps aux | grep sshd > ~/examen/salidas/salida3/procesos.txt
+  337  su
+  338  cd
+  339  sudo ps aux | grep sshd > ~/examen/salidas/salida3/procesos.txt
+  340  sudo su
+  341  ls
+  342  cd examen
+  343  ls
+  344  cd salidas/
+  345  cd salida3
+  346  touch procesos.txt
+  347  sudo touch procesos.txt
+  348  ls
+  349  nano procesos.txt 
+  350  ps aux | grep sshd > procesos.txt 
+  351  sudo ps aux | grep sshd > procesos.txt 
+  352  cd
+  353  sudo chmod -R 777 ~/examen/salidas/salida3
+  354  ./salidas3
+  355  ./salidas3/
+  356  cd salidas/
+  357  cd examen
+  358  cd salidas
+  359  cd salida3
+  360  ls
+  361  ps aux | grep sshd > procesos.txt 
+  362  nano procesos.txt 
+  363  clear
+  364  grep "model name" /proc/cpuinfo
+  365  grep "model name" /proc/meminfo
+  366  cat /proc/meminfo
+  367  grep MemTotal /proc/meminfo
+  368  grep MemTotal /proc/meminfo >> procesos.txt 
+  369  ls
+  370  nano procesos.txt 
+  371  clear
+  372  cd
+  373  cp ~/examen/salidas/salidas3/procesos.txt ~/examen/salidas/salida2
+  374  exit
+  375  exit
+  376  exit
+  377  ls
+  378  pwd
+  379  [200~cp ~/examen/salidas/salida3/procesos.txt ~/examen/salidas/salida2/
+  380  cp ~/examen/salidas/salida3/procesos.txt ~/examen/salidas/salida2/
+  381  sudo chmod -R 777 ~/examen/salidas/salida2
+  382  cp ~/examen/salidas/salida3/procesos.txt ~/examen/salidas/salida2/
+  383  ls
+  384  cd examen/
+  385  cd salidas/
+  386  cd salida2
+  387  ls
+  388  mv procesos.txt procesos2.txt
+  389  ls
+  390  cd
+  391  ~/examen/salidas/salida2/
+  392  cd /examen/salidas/salida2/
+  393  cd examen/salidas/salida2/
+  394  ls
+  395  cd
+  396  clear
+  397  sudo groupadd g315
+  398  cat /etc/group
+  399  sudo useradd parcial315
+  400  cat /etc/group
+  401  sudo usermod -aG g315 parcial315
+  402  id 
+  403  cat /etc/group
+  404  id parcial315
+  405  grep g315 /etc/group
+  406  touch tree examen > info.txt
+  407  touch info.txt
+  408  tree examen > info.txt 
+  409  nano info.txt 
+  410  exit
+  411  lsblk
+  412  clear
+  413  sudo fdisk /dev/sda
+  414  sudo partprobe
+  415  lsblk
+  416  lsblk -l
+  417  exit
+  418  lsblk
+  419  sudo fdisk/dev/sdb
+  420  sudo fdisk /dev/sdb
+  421  sudo partprobe
+  422  lsblk
+  423  exit
+  424  lsblk
+  425  sudo fdisk /dev/sdb
+  426  q
+  427  clear
+  428  ls
+  429  sudo apt install lvm
+  430  dpkg -l | grep lvm2
+  431  sudo apt install lvm2
+  432  dpkg -l | grep lvm2
+  433  lsblk
+  434  sudo fdisk dev/sdb
+  435  sudo fdisk /dev/sdb
+  436  lsblk
+  437  fdisk /dev/sdc
+  438  sudo fdisk /dev/sdc
+  439  sudo partprobe
+  440  clear
+  441  lsblk
+  442  fdisk dev/sdb1
+  443  fdisk /dev/sdb1
+  444  sudo fdisk /dev/sdb1
+  445  sudo fdisk /dev/sdb
+  446  sudo fdisk /dev/sdc
+  447  sudo partprobe
+  448  clear
+  449  lsblk
+  450  lsblk -l
+  451  sudo fdisk /dev/sdb
+  452  clear
+  453  pvs
+  454  lsblk
+  455  pvcreate /dev/sdb1
+  456  sudo pvcreate /dev/sdb1
+  457  sudo pvcreate /dev/sdc1
+  458  pvs
+  459  sudo pvs
+  460  sudo vgs
+  461  sudo vgcreate Prueba /dev/sdb1
+  462  sudo vgextend Prueba /dev/sdc1
+  463  sudo pvs
+  464  sudo vgs
+  465  sudo lvcreate -L 4G -n bd Pruebas
+  466  sudo lvcreate -L 4G -n bd Prueba
+  467  lvs 
+  468  sudo lvs
+  469  sudo mkfs.ext4 /dev/Prueba/bd
+  470  clear
+  471  mkdir BD1
+  472  ls
+  473  sudo mount  /dev/Prueba/bd BD1 
+  474  lsblk
+  475  sudo lvcreate -L 0.9G -n mail Pruebas
+  476  sudo lvcreate -L 0.9G -n mail Prueba
+  477  sudo mkfs.ext4 /dev/Prueba/mail
+  478  mkdir MAIL1
+  479  sudo mount  /dev/Prueba/mail MAIL1 
+  480  clear
+  481  lsblk
+  482  clear
+  483  exit
+  484  lsblk
+  485  clear
+  486  sudo fdisk /dev/sdd
+  487  sudo partprobe
+  488  clear
+  489  lsblk
+  490  sudo pvcreate /dev/sdd3
+  491  sudo vgextend Prueba /dev/sdd3
+  492  sudo vgs
+  493  sudo lvextend -L +1G /dev/Prueba/mail
+  494  lvs
+  495  sudo lvs
+  496  exit
+  497  ls -l
+  498  sudo visudo
+  499  apt update
+  500  sudo apt update
+  501  sudo apt upgrade
+  502  clear
+  503  id
+  504  chmod 400 sample.txt # Solo lectura para el dueño del archivo
+  505  touch sample.txt
+  506  ls
+  507  chmod 400 sample.txt # Solo lectura para el dueño del archivo
+  508  ls
+  509  nano sample.txt 
+  510  chmod 200 sample.txt 
+  511  chmod 200 sample.txt # Solo puede escribir el dueño
+  512  nano sample.txt 
+  513  chmod 700 sample.txt # Solo el dueño puede escribir, leer y ejecutar
+  514  nano sample.txt 
+  515  clear
+  516  cat /etc/passwd
+  517  user -r parcial315
+  518  userdel -r parcial315
+  519  sudo userdel -r parcial315
+  520  cat /etc/passwd
+  521  sudo userdel -r guest-oolv7a
+  522  cat /etc/passwd
+  523  cat /etc/group
+  524  grep prueba /etc/group
+  525  ls -l
+  526  cat /etc/passwd
+  527  sudo userdel -r yo
+  528  cat /etc/passwd
+  529  cat /etc/group
+  530  sudo groupdel g315; sudo groupdel prueba
+  531  cat /etc/passwd
+  532  clear
+  533  locate terminal.txt
+  534  sudo apt install plocate
+  535  locate terminal.txt
+  536  /home/oscar/repogit2/UTN-FRA_SO_Examenes/202405
+  537  cd /home/oscar/repogit2/UTN-FRA_SO_Examenes/202405
+  538  ls
+  539  cd
+  540  clear
+  541  df
+  542  df -h
+  543  lsblk
+  544  lsblk > listado_discos.txt
+  545  ls
+  546  nano listado_discos.txt 
+  547  rm listado_discos.txt 
+  548  ls
+  549  rm info.txt 
+  550  rm tree
+  551  rm sample.txt 
+  552  ls
+  553  clera
+  554  clear
+  555  echo "Usuario="
+  556  ls | tee listado_directorio.txt
+  557  ls
+  558  nano listado_directorio.txt 
+  559  rm listado_directorio.txt 
+  560  ls
+  561  exit
+  562  sudo useradd odin
+  563  sudo groupadd dioses
+  564  cat /etc/group
+  565  grep oscar /etc/group
+  566  grep oscar /etc/passwd
+  567  grep odin /etc/passwd
+  568  grep odin /etc/group
+  569  clear
+  570  pwd
+  571  sudo mkdir /home/odin
+  572  sudo chown odin:odin /home/odin
+  573  ls -l
+  574  clear
+  575  sudo useradd -m loki 
+  576  cat /etc/group
+  577  clear
+  578  gropus odin
+  579  groups odin
+  580  sudo usermod -aG dioses odin
+  581  sudo usermod -aG dioses loki
+  582  groups loki
+  583  cat /etc/group
+  584  getent group dioses
+  585  clear
+  586  id odin
+  587  cat /etc/passwd
+  588  clear
+  589  grep dioses /etc/group
+  590  sudo passwd odin
+  591  ls -l
+  592  cat /etc/passwd
+  593  grep luis /etc/group
+  594  grep luis /etc/passwd
+  595  clear
+  596  grep loki /etc/passwd 
+  597  sudo userdel loki
+  598  grep loki /etc/passwd 
+  599  exit
+  600  whoami
+  601  id
+  602  w
+  603  last
+  604  clear
+  605  ls
+  606  touch info.txt
+  607  ls
+  608  ls -l
+  609  chmod 777 info.txt
+  610  ls -l
+  611  sudo chown odin info.txt 
+  612  ls -l
+  613  mkdir fuego
+  614  ls
+  615  sudo chown odin:dioses /home/fuego
+  616  sudo chown odin:dioses /fuego
+  617  sudo chown odin:dioses fuego
+  618  ls -l
+  619  sudo fdisk -l
+  620  clear
+  621  lsblk
+  622  fdisk -l
+  623  sudo fdisk -l
+  624  sudo lvs
+  625  sudo lv remove bd
+  626  sudo lvremove bd
+  627  sudo umount /dev/Prueba/bd
+  628  sudo lvremove /dev/mapper/Prueba-bd
+  629  sudo lvs
+  630  sudo lvremove /dev/mapper/Prueba-mail
+  631  sudo lvs
+  632  sudo vgdisplay
+  633  sudo vgremove Prueba
+  634  sudo vgdisplay
+  635  sudo lvs
+  636  lsbk
+  637  lsblk
+  638  df -f
+  639  df
+  640  clear
+  641  lsblk
+  642  sudo vgcreate datos /dev/sdd3 /dev/sdb1 /dev/sdc1
+  643  sudo lvs
+  644  sudo vgdisplay
+  645  history
+  646  sudo vgdisplay
+  647  sudo lvcreate -L 1G -n www datos
+  648  sudo vgdisplay
+  649  sudo lvs
+  650  sudo lvcreate -L 4G -n salva datos
+  651  sudo lvs
+  652  sudo mkfs.ext4 /dev/datos/www
+  653  sudo mkfs.ext4 /dev/datos/salva
+  654  vgdisplay
+  655  sudo vgdisplay
+  656  lvs
+  657  sudo lvs
+  658  lsblk
+  659  sudo fdisk /dev/sde
+  660  lsblk
+  661  sudo pvcreate /dev/sde4
+  662  sudo vgs
+  663  sudo vgextend datos /dev/sde4
+  664  sudo vgs
+  665  sudo lvextend -L 1G /dev/datos/www
+  666  lvs
+  667  sudo lvs
+  668  sudo lvextend -L +1G /dev/datos/www
+  669  sudo lvs
+  670  history > history.txt
